@@ -1,0 +1,22 @@
+<h1>Questions</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Name</th>
+        <th>Content</th>
+        <th></th>
+    </tr>
+    <% @questions.each do |question| %>
+        <tr>
+            <th><%= question.id %></th>
+            <th><%= question.title %></th>
+            <th><%= question.name %></th>
+            <th><%= question.content %></th>
+            <th><%= link_to "show", question_path(question) %></th>
+            <th><%= link_to "edit", edit_question_path(question) %></th>
+            <th><%= link_to "destroy", question_path(question), data: {turbo_method: 'delete', turbo_confirm: 'Are you sure?'} %></th>
+        </tr>
+    <% end %>
+    <%= link_to "new", new_question_path %>
+</table>
