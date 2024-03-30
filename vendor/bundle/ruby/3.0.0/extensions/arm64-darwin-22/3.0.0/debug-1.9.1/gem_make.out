@@ -1,0 +1,16 @@
+current directory: /Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
+/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/bin/ruby -I /Users/watanabesodai/.rvm/rubies/ruby-3.0.2/lib/ruby/3.0.0 -r ./siteconf20240325-61979-9ylnkk.rb extconf.rb
+creating Makefile
+
+current directory: /Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= clean
+
+current directory: /Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 debug.bundle ./.gem.20240325-61979-t9w8en/debug

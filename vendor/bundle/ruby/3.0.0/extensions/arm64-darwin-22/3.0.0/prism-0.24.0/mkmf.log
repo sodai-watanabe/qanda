@@ -1,0 +1,74 @@
+find_header: checking for prism.h in /Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/prism-0.24.0/include... -------------------- yes
+
+"gcc -fdeclspec -o conftest -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/arm64-darwin22 -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/ruby/backward -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe conftest.c  -L. -L/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/lib -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib  -m64   -lruby.3.0   "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+"gcc -E -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/arm64-darwin22 -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/ruby/backward -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+conftest.c:3:10: fatal error: 'prism.h' file not found
+#include <prism.h>
+         ^~~~~~~~~
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <prism.h>
+/* end */
+
+"gcc -E -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/arm64-darwin22 -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/ruby/backward -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -I/Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/prism-0.24.0/include conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <prism.h>
+/* end */
+
+--------------------
+
+find_header: checking for prism/extension.h in /Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/prism-0.24.0/ext... -------------------- yes
+
+"gcc -E -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/arm64-darwin22 -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/ruby/backward -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0 -I. -I/Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/prism-0.24.0/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe  conftest.c -o conftest.i"
+conftest.c:3:10: fatal error: 'prism/extension.h' file not found
+#include <prism/extension.h>
+         ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <prism/extension.h>
+/* end */
+
+"gcc -E -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/arm64-darwin22 -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/ruby/backward -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0 -I. -I/Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/prism-0.24.0/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -I/Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/prism-0.24.0/ext conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <prism/extension.h>
+/* end */
+
+--------------------
+
+block in append_cflags: checking for whether -fvisibility=hidden is accepted as CFLAGS... -------------------- yes
+
+"gcc -fdeclspec -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/arm64-darwin22 -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0/ruby/backward -I/Users/watanabesodai/.rvm/rubies/ruby-3.0.2/include/ruby-3.0.0 -I. -I/Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/prism-0.24.0/include -I/Users/watanabesodai/dev/qanda/vendor/bundle/ruby/3.0.0/gems/prism-0.24.0/ext -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include -fno-common -pipe -m64 -fvisibility=hidden -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+--------------------
+
